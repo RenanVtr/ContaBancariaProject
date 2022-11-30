@@ -10,16 +10,16 @@ O objetivo deste projeto é implementar o funcionamento de uma conta bancária, 
 Os dados da classe `conta` são privados, sendo acessados apenas por métodos:
 
 ### Limite Diário de Saque
-`setLimiteDiario()` - Permite ajustar o valor limite diário de saque que poderá ser realizado;
+`setLimiteDiario(double)` - Permite ajustar o valor limite diário de saque que poderá ser realizado;
 
 ### Exibir Saldo
 `exibirSaldo()` - Mostra o saldo atual da conta;
 
 ### Despositar
-`depositar()` - Insere o valor a depositar na conta;
+`depositar(double)` - Insere o valor a depositar na conta;
 
 ### Sacar
-`sacar()` - Retira o valor da conta, caso seja validado de acordo com o saldo disponível na conta e o limite diário estabelecido.
+`sacar(double)` - Retira o valor da conta, caso seja validado de acordo com o saldo disponível na conta e o limite diário estabelecido.
 
 ## Folder Structure
 
