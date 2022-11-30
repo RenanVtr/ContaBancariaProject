@@ -14,13 +14,13 @@ public class Conta {
     }
 
     //Metodo para configurar o valor de limite diario de saque
-    void setlimiteDiario (double limiteDiarioSolicitado){
+    void setLimiteDiario (double limiteDiarioSolicitado){
         limiteDiario = limiteDiarioSolicitado;
         System.out.println("Seu limite diário foi ajustado em" + formatarDecimal(limiteDiario));
     }
 
     //Metodo para Exibir Saldo
-    void exibir_saldo (){
+    void exibirSaldo (){
 
         System.out.println(cliente +" seu saldo atual é de"+ formatarDecimal(saldo));
     }
@@ -29,20 +29,20 @@ public class Conta {
     void depositar(double valorDeposito){
         saldo = saldo + valorDeposito;
         System.out.println("Desposito realizado no valor de" + formatarDecimal(valorDeposito));
-        exibir_saldo();
+        exibirSaldo();
     }
 
     //Metodo para Sacar valor
-    private void sacar(double valorSaque){
+    private void deduzirValor(double valorSaque){
         saldo = saldo - valorSaque;
         System.out.println("Saque realizado no valor de" + formatarDecimal(valorSaque));
-        exibir_saldo();
+        exibirSaldo();
         valorSacado = valorSacado + valorSaque;
         System.out.println("Valor disponível para saque hoje:" + formatarDecimal(limiteDiario - valorSacado) );
     }
 
     //Metodo de Autorização de saque
-    void validarSaque(double valorSaque){
+    void saque(double valorSaque){
 
         //Verificação de Saldo na conta
         if (valorSaque > saldo)
@@ -55,7 +55,7 @@ public class Conta {
         else 
 
         //Saque Realizado
-            {sacar(valorSaque);}
+            {deduzirValor(valorSaque);}
     }
 
     }

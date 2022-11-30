@@ -1,6 +1,25 @@
-## Getting Started
+## Projeto de Conta Bancária
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+O objetivo deste projeto é implementar o funcionamento de uma conta bancária, possibilitando funcionalidades como:
+- Depósito
+- Saque
+- Ajuste de limite de valor saque
+- Visualização de saldo
+- Validação de valores
+
+Os dados da classe `conta` são privados, sendo acessados apenas por métodos:
+
+# Limite Diário de Saque
+'setLimiteDiario()' - Permite ajustar o valor limite diário de saque que poderá ser realizado;
+
+# Exibir Saldo
+"exibirSaldo()" - Mostra o saldo atual da conta;
+
+# Despositar
+"depositar()" - Insere o valor a depositar na conta;
+
+# Sacar
+"sacar()" - Retira o valor da conta, caso seja validado de acordo com o saldo disponível na conta e o limite diário estabelecido.
 
 ## Folder Structure
 

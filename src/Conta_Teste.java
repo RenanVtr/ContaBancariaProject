@@ -6,11 +6,11 @@ public class Conta_Teste {
         Conta conta = new Conta();
 
         conta.cliente = "Renan";
-        conta.setlimiteDiario(500);
-        conta.exibir_saldo();
+        conta.setLimiteDiario(500);
+        conta.exibirSaldo();
         conta.depositar(900.50);
-        conta.validarSaque(400);
-        conta.validarSaque(100);
+        conta.saque(400);
+        conta.saque(100);
         
     }
 }
